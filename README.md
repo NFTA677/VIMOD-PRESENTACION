@@ -16,7 +16,7 @@ public/
   js/main.js        Navegación, animaciones, formulario de contacto
   js/planes.js      Carga de planes y formulario de solicitud
   img/              Logo
-  video/            Video de portada (VIMOD_intro_v2.mp4)
+  video/            Video de portada (VIMOD_intro_v3_1080p.mp4)
 data/planes.js      Precios y características de los planes
 models/             Esquemas de MongoDB
 server.js           Servidor Express + API
@@ -35,7 +35,7 @@ Abre http://localhost:3000
 
 ## Video de portada
 
-El video está en `public/video/VIMOD_intro_v2.mp4`. Para cambiarlo, reemplaza el archivo
+El video está en `public/video/VIMOD_intro_v3_1080p.mp4`. Para cambiarlo, reemplaza el archivo
 (o edita la ruta en `public/index.html`). Recomendado: MP4 H.264, 1280×720 o 1920×1080, menos de 15 MB.
 
 ## Subir a GitHub
