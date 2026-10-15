@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VIMOD | Arquitectura, Diseño y Software</title>
+  <meta name="description" content="VIMOD – Arquitectura y Diseño. Proyectos, softwares de gestión empresarial y soluciones a medida.">
+  <link rel="icon" href="img/vimod-logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Navegación -->
+  <nav class="nav" id="nav">
+    <div class="contenedor">
+      <a href="#inicio" class="nav__logo"><img src="img/vimod-logo.png" alt="VIMOD Arquitectura y Diseño"></a>
+      <button class="nav__toggle" id="navToggle" aria-label="Abrir menú"><span></span><span></span><span></span></button>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#proyectos">Nuestros proyectos</a></li>
+        <li><a href="#softwares">Nuestros softwares</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero con video -->
+  <header class="hero" id="inicio">
+    <!-- Coloca tu propio video en public/video/hero.mp4 (se usa primero). -->
+    <video class="hero__video" autoplay muted loop playsinline preload="auto"
+           poster="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1920&q=70">
+      <source src="video/hero.mp4" type="video/mp4">
+      <source src="https://videos.pexels.com/video-files/3129671/3129671-uhd_2560_1440_30fps.mp4" type="video/mp4">
+    </video>
+    <div class="hero__contenido">
+      <h1 class="hero__titulo"><span class="fino">VI</span><span class="grueso">MOD</span></h1>
+      <p class="hero__sub">Arquitectura · Diseño · Software</p>
+    </div>
+    <a href="#nosotros" class="hero__scroll">Desliza</a>
+  </header>
+
+  <!-- Nosotros -->
+  <section class="seccion seccion--clara" id="nosotros">
+    <div class="contenedor nosotros">
+      <div class="nosotros__img revelar">
+        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1000&q=75" alt="Oficina de VIMOD" loading="lazy">
+      </div>
+      <div class="revelar">
+        <span class="etiqueta">Nosotros</span>
+        <h2 class="titulo">Diseñamos espacios <strong>y soluciones</strong> que transforman</h2>
+        <p class="texto">En VIMOD unimos la arquitectura, el diseño y la tecnología. Creamos espacios funcionales y estéticos, y desarrollamos software que ayuda a las empresas a gestionar sus procesos con claridad y control.</p>
+        <p class="texto" style="margin-top:14px">Nuestro equipo combina experiencia en obra, diseño de interiores y desarrollo de sistemas para ofrecer resultados medibles en cada proyecto.</p>
+        <div class="cifras">
+          <div class="cifra"><b data-contar="120">0</b><span>Proyectos</span></div>
+          <div class="cifra"><b data-contar="10">0</b><span>Años</span></div>
+          <div class="cifra"><b data-contar="85">0</b><span>Clientes</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Proyectos -->
+  <section class="seccion" id="proyectos">
+    <div class="contenedor">
+      <div class="proyectos__cabecera revelar">
+        <div>
+          <span class="etiqueta">Portafolio</span>
+          <h2 class="titulo" style="margin:0">Nuestros <strong>proyectos</strong></h2>
+        </div>
+        <p class="texto" style="max-width:40ch">Una selección de obras residenciales, corporativas y comerciales.</p>
+      </div>
+      <div class="galeria">
+        <article class="proyecto proyecto--ancho revelar">
+          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1400&q=75" alt="Residencia moderna" loading="lazy">
+          <div class="proyecto__info"><p>Residencial</p><h3>Casa Horizonte</h3></div>
+        </article>
+        <article class="proyecto revelar">
+          <img src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=800&q=75" alt="Edificio corporativo" loading="lazy">
+          <div class="proyecto__info"><p>Corporativo</p><h3>Torre Norte</h3></div>
+        </article>
+        <article class="proyecto revelar">
+          <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=75" alt="Interior minimalista" loading="lazy">
+          <div class="proyecto__info"><p>Interiorismo</p><h3>Loft Central</h3></div>
+        </article>
+        <article class="proyecto revelar">
+          <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800&q=75" alt="Planos arquitectónicos" loading="lazy">
+          <div class="proyecto__info"><p>Diseño</p><h3>Plan Maestro Sur</h3></div>
+        </article>
+        <article class="proyecto revelar">
+          <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=800&q=75" alt="Oficinas" loading="lazy">
+          <div class="proyecto__info"><p>Comercial</p><h3>Oficinas Prisma</h3></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Softwares -->
+  <section class="seccion seccion--gris" id="softwares">
+    <div class="contenedor software">
+      <div class="revelar">
+        <span class="etiqueta">Nuestros softwares</span>
+        <h2 class="titulo">Tecnología para <strong>gestionar tu empresa</strong></h2>
+        <p class="texto">VIMOD Gestión es un software ideal para la gestión empresarial: centraliza ventas, inventario, finanzas, clientes y proyectos en una sola plataforma en la nube.</p>
+        <ul class="lista-check">
+          <li>Facturación, inventario y compras</li>
+          <li>Control financiero y contable</li>
+          <li>Seguimiento de proyectos y obras</li>
+          <li>Reportes y dashboards en tiempo real</li>
+        </ul>
+        <a href="planes.html" class="btn">Ver planes <span class="flecha">→</span></a>
+      </div>
+      <a href="planes.html" class="software__card revelar">
+        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&q=75" alt="Panel de VIMOD Gestión" loading="lazy">
+        <div class="software__card-cuerpo">
+          <h3>VIMOD <strong>Gestión</strong></h3>
+          <span class="chip">Ideal para gestión empresarial</span>
+          <p class="texto">Organiza tu negocio, toma decisiones con datos y crece sin perder el control. Haz clic para conocer nuestros planes.</p>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section class="seccion" id="contacto">
+    <div class="contenedor contacto">
+      <div class="revelar">
+        <span class="etiqueta">Contacto</span>
+        <h2 class="titulo">Hablemos de tu <strong>próximo proyecto</strong></h2>
+        <p class="texto">Cuéntanos qué necesitas y te responderemos a la brevedad.</p>
+        <ul class="datos-contacto">
+          <li><b>Correo</b>vimodcoworking@gmail.com</li>
+          <li><b>Horario</b>Lunes a viernes · 9:00 – 18:00</li>
+        </ul>
+      </div>
+      <form class="form revelar" id="formContacto">
+        <div class="campo"><label for="c-nombre">Nombre</label><input id="c-nombre" name="nombre" required maxlength="120"></div>
+        <div class="campo"><label for="c-email">Correo</label><input id="c-email" name="email" type="email" required></div>
+        <div class="campo"><label for="c-mensaje">Mensaje</label><textarea id="c-mensaje" name="mensaje" required maxlength="2000"></textarea></div>
+        <div><button class="btn" type="submit">Enviar <span class="flecha">→</span></button></div>
+        <p class="form__estado" id="estadoContacto" role="status"></p>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="contenedor">
+      <img src="img/vimod-logo.png" alt="VIMOD">
+      <p>© <span id="anio"></span> VIMOD · Arquitectura y Diseño. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

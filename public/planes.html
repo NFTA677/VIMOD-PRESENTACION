@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Planes | VIMOD Gestión</title>
+  <meta name="description" content="Planes Estándar, Premium y Enterprise de VIMOD Gestión, software ideal para la gestión empresarial.">
+  <link rel="icon" href="img/vimod-logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <nav class="nav solida" id="nav">
+    <div class="contenedor">
+      <a href="index.html" class="nav__logo"><img src="img/vimod-logo.png" alt="VIMOD Arquitectura y Diseño"></a>
+      <button class="nav__toggle" id="navToggle" aria-label="Abrir menú"><span></span><span></span><span></span></button>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="index.html#inicio">Inicio</a></li>
+        <li><a href="index.html#nosotros">Nosotros</a></li>
+        <li><a href="index.html#proyectos">Nuestros proyectos</a></li>
+        <li><a href="index.html#softwares" class="activo">Nuestros softwares</a></li>
+        <li><a href="index.html#contacto">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="cabecera-planes">
+    <div class="contenedor">
+      <span class="etiqueta">VIMOD Gestión</span>
+      <h1 class="titulo">Nuestros <strong>planes</strong></h1>
+      <p class="texto">Elige el plan que mejor se adapta a tu empresa. Todos incluyen acceso en la nube, actualizaciones y respaldo de tu información.</p>
+    </div>
+  </header>
+
+  <main class="contenedor">
+    <div class="planes" id="planes"><!-- Se llena desde /api/planes --></div>
+  </main>
+
+  <!-- Modal de solicitud -->
+  <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitulo">
+    <div class="modal__caja">
+      <button class="modal__cerrar" id="modalCerrar" aria-label="Cerrar">×</button>
+      <span class="etiqueta">Solicitud</span>
+      <h2 class="titulo" id="modalTitulo" style="font-size:2rem">Plan <strong></strong></h2>
+      <form class="form" id="formSolicitud">
+        <input type="hidden" name="plan">
+        <div class="campo"><label for="s-nombre">Nombre</label><input id="s-nombre" name="nombre" required maxlength="120"></div>
+        <div class="campo"><label for="s-empresa">Empresa</label><input id="s-empresa" name="empresa" maxlength="160"></div>
+        <div class="campo"><label for="s-email">Correo</label><input id="s-email" name="email" type="email" required></div>
+        <div class="campo"><label for="s-tel">Teléfono</label><input id="s-tel" name="telefono" maxlength="40"></div>
+        <div><button class="btn" type="submit">Solicitar <span class="flecha">→</span></button></div>
+        <p class="form__estado" id="estadoSolicitud" role="status"></p>
+      </form>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="contenedor">
+      <img src="img/vimod-logo.png" alt="VIMOD">
+      <p>© <span id="anio"></span> VIMOD · Arquitectura y Diseño. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/planes.js"></script>
+</body>
+</html>
